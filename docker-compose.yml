@@ -1,0 +1,17 @@
+version: '3'
+services:
+  web:
+    build: .
+    image: srikanthamudala/sample-django-project
+    command: python manage.py runserver 0.0.0.0:8989
+
+    volumes:
+        - .:/code
+    ports:
+      - "8989:8989"
+
+    depends_on:
+      - db
+
+  db:
+    image: postgres:12.0-alpine
