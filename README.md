@@ -1,5 +1,4 @@
-# djangoProjectV1
-ToDo Django App
+# ToDo Django App
 TODO server app with Python, Django, and PostgreSQL. The primary interface is
 a REST API. 
 
